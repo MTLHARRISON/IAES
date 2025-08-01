@@ -12,21 +12,21 @@ https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo/3.8
 
 - Create and Entra Appliction Registration.
 - Under API permissions set the following ( Microsoft Graph / Application Permissions )
-* Device.ReadWrite.All
-* DeviceManagementManagedDevices.ReadWrite.All
-* DeviceManagementServiceConfig.ReadWrite.All
-* Group.ReadWrite.All
-* GroupMember.ReadWrite.All
+    - Device.ReadWrite.All
+    - DeviceManagementManagedDevices.ReadWrite.All
+    - DeviceManagementServiceConfig.ReadWrite.All
+    - Group.ReadWrite.All
+    - GroupMember.ReadWrite.All
 
 - In the Script set the following variables:
-* $TenantId = Directory (tenant) ID
-* $AppId = Application (client) ID
-* $AppSecret = Secret Value
-* $AddToGroup = The Group Name your Autopilot Profile is applied to
-* $expiry_date = Expires Colulm of the Secret from $AppSecret
-* $ca_url = A webserver that has a copy of the CA for DPI / Content Filter
-* $Assign = If you want the script to pause until the profile is assinged set this to $true
-* $Reboot = Reboot at the end of the script
+    - $TenantId = Directory (tenant) ID
+    - $AppId = Application (client) ID
+    - $AppSecret = Secret Value
+    - $AddToGroup = The Group Name your Autopilot Profile is applied to
+    - $expiry_date = Expires Colulm of the Secret from $AppSecret
+    - $ca_url = A webserver that has a copy of the CA for DPI / Content Filter
+    - $Assign = If you want the script to pause until the profile is assinged set this to $true
+    - $Reboot = Reboot at the end of the script
 
 
 
