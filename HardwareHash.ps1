@@ -16,7 +16,7 @@ param(
 	[Parameter(Mandatory=$False,ParameterSetName = 'Online')] [String] $AppSecret = "",
 	[Parameter(Mandatory=$False,ParameterSetName = 'Online')] [String] $AddToGroup = "Staff Intune Devices",
 	[Parameter(Mandatory=$false,ParameterSetName = 'Online')] [String] $expiry_date = "25/01/2025",
-	[Parameter(Mandatory=$false,ParameterSetName = 'Online')] [String] $ca_url = "http://danddfiles.co.uk/ssl/DNDRootCA.cer",
+	[Parameter(Mandatory=$false,ParameterSetName = 'Online')] [String] $ca_url = "http://testserver/RootCA.cer",
     ##
 	[Parameter(Mandatory=$False,ParameterSetName = 'Online')] [String] $AssignedComputerName = "",
 	[Parameter(Mandatory=$False,ParameterSetName = 'Online')] [Switch] $Assign = $True,
@@ -39,7 +39,7 @@ Begin
     Write-Host "Internet connection is active" -ForegroundColor Green
 	} else {
     Write-Host "No internet connection" -ForegroundColor Red
-    exit 1
+    exit 2
 	}
 
 
